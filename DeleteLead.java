@@ -226,7 +226,7 @@ public class DeleteLead {
 		findLeadsButton.click();
 		
 		//WebElement deleteNote = driver.findElement(By.xpath("//div[@class='x-toolbar x-small-editor']//div"));
-		WebElement text = driver.findElement(By.xpath("//div[@class='x-toolbar x-small-editor']/div"));
+		WebElement text = driver.findElement(By.className("x-paging-info"));
 		//String text = driver.findElement(By.cssSelector("//div[@class='x-toolbar x-small-editor']//div")).getText();
 		String deleteNotePrint = text.getText();
 		System.out.println("The First Lead ID from the table has been removed and the system displayed the message on the screen as "+leadID+" "+deleteNotePrint);
